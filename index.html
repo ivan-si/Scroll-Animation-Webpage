@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ballad of Buster Scruggs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Smokum', serif;
+            color: #777;
+            overflow-x: hidden;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5,
+        .bgimg-6,
+        .bgimg-7,
+        .bgimg-8,
+        .bgimg-9,
+        .bgimg-10 {
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-container {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .parallax-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+
+        .caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            font-size: 3.5em;
+            text-align: center;
+            z-index: 1;
+        }
+
+        /* Paragraph sections between images */
+        .text-section {
+            color: #777;
+            background-color: white;
+            padding: 50px 80px;
+            text-align: justify;
+            font-family: 'Smokum', serif;
+            font-size: 1em;
+        }
+
+        .text-section h3 {
+            text-align: center;
+            font-size: 2.8em;
+            color: #333;
+            font-family: 'Rye', serif;
+        }
+
+        .text-section p {
+            font-size: 1.8em;
+            line-height: 1.6;
+            font-family: 'Smokum', serif;
+        }
+
+        /* Dynamic heights for images */
+        .bgimg-1 {
+            min-height: 100vh;
+            background-image: url('1.png');
+        }
+
+        .bgimg-2 {
+            min-height: 400px;
+            background-image: url('2.png');
+        }
+
+        .bgimg-3 {
+            min-height: 600px;
+            background-image: url('3.png');
+        }
+
+        .bgimg-4 {
+            min-height: 500px;
+            background-image: url('4.png');
+        }
+
+        .bgimg-5 {
+            min-height: 300px;
+            background-image: url('5.png');
+        }
+
+        .bgimg-6 {
+            min-height: 700px;
+            background-image: url('6.png');
+        }
+
+        .bgimg-7 {
+            min-height: 400px;
+            background-image: url('7.png');
+        }
+
+        .bgimg-8 {
+            min-height: 500px;
+            background-image: url('8.png');
+        }
+
+        .bgimg-9 {
+            min-height: 400px;
+            background-image: url('9.png');
+        }
+
+        .bgimg-10 {
+            min-height: 100vh;
+            background-image: url('10.png');
+        }
+
+        .bgimg-1 .caption,
+        .bgimg-10 .caption {
+            font-family: 'Rye', serif;
+            font-size: 3.5em;
+        }
+
+        /* Apply "Smokum" font for all other captions */
+        .caption {
+            font-family: 'Smokum', serif;
+        }
+
+        /* Media query for smaller screens (Disable parallax) */
+        @media only screen and (max-width: 768px) {
+            .parallax-image {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg-1">
+        <div class="caption">The Ballad of Buster Scruggs</div>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption">Now who's that coming</div>
+    </div>
+    <div class="text-section">
+        <h3>An unwanted guest</h3>
+        <p>The tension rises as another rider makes his appearance. This stranger, with his cold and calculated
+            presence,
+            brings a sense of dread. The town grows quieter, knowing the confrontation is inevitable.</p>
+    </div>
+    <div class="bgimg-3">
+        <div class="caption">You Buster Scruggs? I've been hunting you.</div>
+    </div>
+    <div class="text-section">
+        <h3>The challenge</h3>
+        <p>With a few well-placed words, the stranger reveals his intent: he has come for Buster. The hunter and the
+            hunted lock eyes, and the inevitable showdown is only a matter of time. Buster’s charm won’t save him from
+            this duel.</p>
+    </div>
+    <div class="bgimg-4">
+        <div class="caption">Another young fella with something to prove</div>
+    </div>
+    <div class="text-section">
+        <h3>Fate sealed</h3>
+        <p>Buster recognizes the ambition in the stranger’s eyes, seeing himself reflected in the younger man. But the
+            world of outlaws doesn’t allow second chances—this one will be Buster’s last showdown.</p>
+    </div>
+    <div class="bgimg-5">
+        <div class="caption">I gotta set myself in the undertaking business</div>
+    </div>
+    <div class="text-section">
+        <h3>The undertaker</h3>
+        <p>Even in the face of death, Buster’s wit shines through. An undertaker already waits to claim the loser’s
+            body, somebody's dying today.</p>
+    </div>
+    <div class="bgimg-6">
+        <div class="caption">You need a countdown?</div>
+    </div>
+
+    <div class="bgimg-7">
+        <div class="caption">No sir</div>
+    </div>
+    <div class="bgimg-8">
+        <div class="caption">BANG!</div>
+    </div>
+    <div class="bgimg-9">
+        <div class="caption">Well that ain't good</div>
+    </div>
+    <div class="text-section">
+        <h3>The shot</h3>
+        <p>The duel is over in an instant. Buster, for all his skill and bravado, meets his match. The gunshot rings
+            through the desert, marking the end of his ballad.</p>
+    </div>
+    <div class="bgimg-10">
+        <div class="caption">The End of the Ballad</div>
+    </div>
+
+</body>
+
+</html>
